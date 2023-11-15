@@ -1,0 +1,7 @@
+
+
+node_modules/
+dist/
+*.class
+*.py[code]
+.parcel-cache/

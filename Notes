@@ -1,0 +1,86 @@
+// Why npm is necessary , -> to remove all console.log() at the time of production , for  bundling,optimization of our react code, menify it, chunking, TreeShaking, etc,. ,
+// TreeShaking is use to remove un-wanted code .
+// Packagelock.json lock the version of the package
+
+
+
+// WE did not push node_modules in our git hub repo because it is the heaviest element , so 
+// instead of not_modules we push package_lock.json, it has sufficient information about node_modules
+// when it is deployed due to the help of package_lock.json , node_modules is reconstructed at the 
+// server end .
+
+// npx means execute usign npm. (parcel gives server to us.)
+
+//parcel willl keep the track of all the thing which is changing (HMR-->HOT Module Replacement).
+//parcel also take care of port number.
+// Parcel uses File Watcher Algorithm written in c++ , which identifies the change happened in our code so it directly update  changes in our live server.
+// Pacel create a server for us. 
+//Parcel is a bundler that bundle our whole project , it also MINIFY , it also clean our code example it removes all the console.log() for optimizations at server end .
+// Parcel does image optimization also.
+// Pacel does caching while development. 
+// Parcel do compression of our code also.
+// parcel make our app compatible with older versions of browsers also.
+//Parcel uses consistent hashing algorithm for hashing ,bundling.
+//we have our package manager that takes care of Transitive Dependencies or our code. (Transitive Dependencies are means 1 dependency is dependent on another dependency and another dependency is dependent on another dependency and so on).
+// React application is so fast because of node_modules, virtual dom , and Transitives dependencies.
+
+
+// anything which can be auto generated are written inside .gitignore.
+
+
+//browserslist make our code competable for a lot of browsers even all the old versions of browsers.
+
+
+
+//codes to start our program
+
+// npm install
+// npm init  (command to initialise npm)
+
+// npm i -D parcel 
+
+
+// npx parcel index.html          (index.html is entry point).
+
+
+
+polyfill is use to convert the new version of code into older version so that our code can 
+work on older version. 
+if our code does no work on the new version then polyfill will convert the code into older version.
+
+babel actually convert our code to older version code. 
+Babel keep track of browserslist and it identifies our browsers 
+
+Babel plugin transform remove plugin is use to remove all the console.log( ) at the time or production of our app.
+
+
+React.createElement  => Object ==> HTML  => HTML is then put in the dom.
+
+
+JSX --> React.createElement  => Object ==> HTML  => HTML is then put in the dom. 
+
+Babel convert JSX into React.createElement.
+
+Advantages of JSX
+1) Readibility .
+2) Less code
+3) Better developer experience.
+4) Easy Maintainability of code.
+
+
+
+
+
+
+Functional Componennt is a functional component the return some react element .
+
+const HeadingCOmponent = ()=>{ return ( )};
+
+
+1) Functional component or any componenet names starts with capital letter.
+
+
+
+// Imp   (COnfig driven UI)
+
+optional chaining 
